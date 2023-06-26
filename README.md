@@ -4,7 +4,7 @@
 
 [![Chat on Telegram](https://img.shields.io/badge/chat-on%20telegram-9cf.svg)](https://t.me/RADIANCE_TON_SDK)
 
-True async wrapper powered by [ton_client](https://github.com/radianceteam/ton-client-php-ext/)
+True async wrapper powered by [ton_client](https://github.com/sabhyap/ton-client-php-ext/)
 extension with multi-threading and blocking queues under the hood.
 
 ## Requirements
@@ -14,12 +14,12 @@ extension with multi-threading and blocking queues under the hood.
 
 ## Installation
 
-1. Install [TON Client PHP extension](https://github.com/radianceteam/ton-client-php-ext) as described
-   in [readme](https://github.com/radianceteam/ton-client-php-ext/blob/master/INSTALL.md).
+1. Install [TON Client PHP extension](https://github.com/sabhyap/ton-client-php-ext) as described
+   in [readme](https://github.com/sabhyap/ton-client-php-ext/blob/master/INSTALL.md).
 2. Run `composer`:
 
 ```shell
-composer require radianceteam/ton-client-php
+composer require sabhyap/ton-client-php
 ```
 
 ## Usage examples
@@ -133,15 +133,15 @@ See more examples in [demo](demo) folder.
 
 All Docker images are based on `alpine` image. They contain the corresponding PHP interpreter from
 the [original PHP image](https://hub.docker.com/_/php)
-with [ton-client](https://github.com/radianceteam/ton-client-php-ext) extension preinstalled.
+with [ton-client](https://github.com/sabhyap/ton-client-php-ext) extension preinstalled.
 
 ### How to use Docker images
 
-Use [radianceteam/ton-client-php](https://hub.docker.com/r/radianceteam/ton-client-php)
+Use [sabhyap/ton-client-php](https://hub.docker.com/r/sabhyap/ton-client-php)
 as a base image in your `Dockerfile`:
 
 ```bash
-FROM radianceteam/ton-client-php:1.38.0-php7.4-cli
+FROM sabhyap/ton-client-php:1.43.2-php7.4-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
@@ -149,7 +149,7 @@ CMD [ "php", "./your-script.php" ]
 
 Basically, do anything you can do with the [original PHP image](https://hub.docker.com/_/php)
 by just replacing `FROM php:<PHP_VERSION>-<PHP_IMAGE_VARIANT>` with
-`FROM radianceteam/ton-client-php:1.38.0-php<PHP_VERSION>-<PHP_IMAGE_VARIANT>`.
+`FROM sabhyap/ton-client-php:1.43.2-php<PHP_VERSION>-<PHP_IMAGE_VARIANT>`.
 
 Note: only `cli`, `fpm` and `zts` variants are supported ATM.
 

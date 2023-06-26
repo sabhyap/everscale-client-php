@@ -2052,7 +2052,7 @@
     "platform": {
         "php": ">=7.4",
         "ext-json": "*",
-        "ext-ton_client": ">=1.38.0"
+        "ext-ton_client": ">=1.43.2"
     },
     "platform-dev": {
         "ext-readline": "*"

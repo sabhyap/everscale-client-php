@@ -18,7 +18,7 @@ class ResultOfVersion implements JsonSerializable
     public function __construct(?array $dto = null)
     {
         if (!$dto) $dto = [];
-        $this->_version = $dto['version'] ?? '';
+        $this->_version = '1.43.2';
     }
 
     public function getVersion(): string
